@@ -79,9 +79,10 @@ updateDisplay() {
         this.currentArgumentTextElement.innerText =
             this.getDisplayNumber(this.currentArgument)
         if (this.operation !=null) {
-            this.previousArgumentTextElement.innerText = `${this.getDisplayNumber(this.previousArgument)} ${this.operation}` 
+            this.previousArgumentTextElement.innerText = 
+            `${this.getDisplayNumber(this.previousArgument)} ${this.operation}` 
         } else {
-            this.previousArgumentTextElement = ''
+            this.previousArgumentTextElement.innerText = ''
         }
     }
 }  
